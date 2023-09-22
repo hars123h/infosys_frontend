@@ -109,7 +109,7 @@ const Task = () => {
                                 <div className="flex-1 px-[10px] leading-none">
                                     <p className='text-lg text-[#1e2531]'>Invite to activate 5</p>
                                     <span className="text-[#818393] text-sm font-light">
-                                        Earn money by sharing your invitation links to recommend friends to sign up for Kraft
+                                        Earn money by sharing your invitation links to recommend friends to sign up for Infosys
                                         App.
                                         <br />
                                         Success +5, extra bonus 100
@@ -143,7 +143,7 @@ const Task = () => {
                                 <div className="flex-1 px-[10px] leading-none">
                                     <p className='text-lg text-[#1e2531]'>Invite to activate 10</p>
                                     <span className="text-[#818393] text-sm font-light">
-                                        Earn money by sharing your invitation links to recommend friends to sign up for Kraft
+                                        Earn money by sharing your invitation links to recommend friends to sign up for Infosys
                                         App.
                                         <br />
                                         Success +10, extra bonus 200
@@ -177,7 +177,7 @@ const Task = () => {
                                 <div className="flex-1 px-[10px] leading-none">
                                     <p className='text-lg text-[#1e2531]'>Invite to activate 50</p>
                                     <span className="text-[#818393] text-sm font-light">
-                                        Earn money by sharing your invitation links to recommend friends to sign up for Kraft
+                                        Earn money by sharing your invitation links to recommend friends to sign up for Infosys
                                         App.
                                         <br />
                                         Success +50, extra bonus 1,500
@@ -211,7 +211,7 @@ const Task = () => {
                                 <div className="flex-1 px-[10px] leading-none">
                                     <p className='text-lg text-[#1e2531]'>Invite to activate 100</p>
                                     <span className="text-[#818393] text-sm font-light">
-                                        Earn money by sharing your invitation links to recommend friends to sign up for Kraft
+                                        Earn money by sharing your invitation links to recommend friends to sign up for Infosys
                                         App.
                                         <br />
                                         Success +100, extra bonus 5000
@@ -245,7 +245,7 @@ const Task = () => {
                                 <div className="flex-1 px-[10px] leading-none">
                                     <p className='text-lg text-[#1e2531]'>Invite to activate 500</p>
                                     <span className="text-[#818393] text-sm font-light">
-                                        Earn money by sharing your invitation links to recommend friends to sign up for Kraft
+                                        Earn money by sharing your invitation links to recommend friends to sign up for Infosys
                                         App.
                                         <br />
                                         Success +500, extra bonus 20,000
@@ -279,7 +279,7 @@ const Task = () => {
                                 <div className="flex-1 px-[10px] leading-none">
                                     <p className='text-lg text-[#1e2531]'>Invite to activate 5000</p>
                                     <span className="text-[#818393] text-sm font-light">
-                                        Earn money by sharing your invitation links to recommend friends to sign up for Kraft
+                                        Earn money by sharing your invitation links to recommend friends to sign up for Infosys
                                         App.
                                         <br />
                                         Success +5000, extra bonus 1,000,000,
