@@ -245,7 +245,7 @@ const ProductCard = ({ active, pre_sale, long_plan_state, product_type, product_
                                         <p className=' text-[#4b4d5e] text-base'>
                                             <em className=' p-0 px-[2px] border-0 text-base font-light not-italic leading-none '>₹</em>
 
-                                            {userDetails?.balance?.toFixed(2)}
+                                            {userDetails?.recharge_amount?.toFixed(2)}
                                         </p>
                                     </div>
 
