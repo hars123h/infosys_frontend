@@ -19,7 +19,7 @@ const ForgotPassword = () => {
     } = useContext(ContextApi);
 
     const [secret, setSecret] = useState('password')
-    // const [pwd, setPwd] = useState('')
+    const [pwd, setPwd] = useState('')
     const [newPwd, setNewPwd] = useState('')
     const [otpfield, setOTPfield] = useState('');
     const [otp, setOtp] = useState('');
@@ -68,7 +68,7 @@ const ForgotPassword = () => {
         else {
 
             await axios.post(`${BASE_URL}/forgot_password`,
-                { new_pwd: newPwd, mobno }).then(() => {
+                { new_pwd: newPwd, mobno, pwd }).then((res) => {
                     // setOtp('');
                     // setOTPfield('');
                     setMobno('');
@@ -126,6 +126,24 @@ const ForgotPassword = () => {
                                     <label className='placeholder text-[#818393] text-sm left-[10px] pointer-events-none absolute origin-[0_50%] transition-all duration-200  '>TEL</label>
 
                                 </div>
+                            </div>
+                        </div>
+
+                        <div className="mb-5 relative">
+
+                            <div className="px-[10px] relative border-0 border-solid border-[rgba(215, 215, 215, 0.6)] bg-[rgb(246,246,246)] rounded-[7px] flex items-center flex-wrap">
+                                <input
+                                    onChange={e => setPwd(e.target.value)}
+                                    type="password"
+                                    name="pass"
+                                    id="pass"
+                                    className='flex-1 fillArea w-full h-[50px] text-base leading-none px-[5px] py-[10px] appearance-none select-text outline-none border-0 border-[#e0e0e0] border-solid text-[#1e2531] font-medium bg-transparent '
+                                    placeholder=''
+
+                                />
+                                <div className="cut bg-transparent rounded-[10px] h-5 left-[10px] absolute -top-5 translate-y-0 w-[100px] transition-transform delay-0 eas duration-200"></div>
+                                <label className='placeholder text-[#818393] text-sm leading-none left-[10px] pointer-events-none absolute origin-[0_50%] transition-all duration-200  '>Old Password</label>
+
                             </div>
                         </div>
 
