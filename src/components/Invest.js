@@ -269,7 +269,7 @@ const Invest = () => {
 
                                 {activelist === 'activity' &&
                                     <div className="block bg-white -top-[10px] pt-[10px] px-[5px] pb-12 relative z-[2] rounded-[7px] ">
-                                        <div className="flex flex-wrap items-center justify-between">
+                                        {/* <div className="flex flex-wrap items-center justify-between">
 
                                             <ProductCard
                                                 product_type={1}
@@ -345,7 +345,9 @@ const Invest = () => {
                                                 active={false}
                                             />
 
-                                        </div>
+                                        </div> */}
+                                        <div className="text-center h-screen mt-52">no plan available</div>
+
                                     </div>
 
                                 }
