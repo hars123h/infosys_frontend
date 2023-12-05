@@ -26,7 +26,22 @@ const ProductCard = ({ active, pre_sale, long_plan_state, product_type, product_
     const [pop, setpop] = useState(false)
     const [quantity, setQuantity] = useState(1)
 
+    const superProduct = userDetails?.plans_purchased?.filter(e => e.product_type === 0)
+
     const handelInvest = async () => {
+
+        if (activity_plan === true) {
+            if (plan_amount === 3000 && !superProduct?.some(obj => obj.plan_amount === 575)) {
+                toaster('Please buy 575 plan first in stable plan');
+                return
+            }
+
+            if (plan_amount === 10000 && !superProduct?.some(obj => obj.plan_amount === 2000)) {
+                toaster('Please buy 2000 plan first in stable plan');
+                return
+            }
+        }
+
         if (quantity <= 0) {
             toaster('Please a positive value!');
         } else {
