@@ -269,25 +269,27 @@ const Invest = () => {
 
                                 {activelist === 'activity' &&
                                     <div className="block bg-white -top-[10px] pt-[10px] px-[5px] pb-12 relative z-[2] rounded-[7px] ">
-                                        {/* <div className="flex flex-wrap items-center justify-between">
+                                        <div className="flex flex-wrap items-center justify-between">
 
                                             <ProductCard
                                                 product_type={1}
                                                 product_image={img302}
-                                                plan_cycle={20}
-                                                plan_amount={2001}
-                                                plan_daily_earning={1500.75}
+                                                plan_cycle={30}
+                                                plan_amount={3000}
+                                                plan_daily_earning={300}
+                                                activity_plan={true}
                                             />
 
                                             <ProductCard
                                                 product_type={1}
                                                 product_image={img302}
-                                                plan_cycle={20}
-                                                plan_amount={5000}
-                                                plan_daily_earning={3900}
+                                                plan_cycle={30}
+                                                plan_amount={10000}
+                                                plan_daily_earning={1200}
+                                                activity_plan={true}
                                             />
 
-                                            <ProductCard
+                                            {/* <ProductCard
                                                 product_type={1}
                                                 product_image={''}
                                                 plan_cycle={27}
@@ -343,10 +345,10 @@ const Invest = () => {
                                                 plan_amount={2700}
                                                 plan_daily_earning={3483}
                                                 active={false}
-                                            />
+                                            /> */}
 
-                                        </div> */}
-                                        <div className="text-center h-screen mt-52">no plan available</div>
+                                        </div>
+                                        {/* <div className="text-center h-screen mt-52">no plan available</div> */}
 
                                     </div>
 

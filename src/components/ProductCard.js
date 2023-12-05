@@ -6,9 +6,9 @@ import { ContextApi } from '../App'
 import axios from 'axios'
 import BASE_URL from '../api_url'
 
-const ProductCard = ({ active, pre_sale, long_plan_state, product_type, product_image, plan_name, plan_type, plan_amount, plan_daily_earning, plan_cycle, handleClick }) => {
+const ProductCard = ({ active, pre_sale, long_plan_state, product_type, product_image, plan_name, plan_type, plan_amount, plan_daily_earning, plan_cycle, handleClick, activity_plan }) => {
 
-    Date.prototype.addDays = function(days) {
+    Date.prototype.addDays = function (days) {
         this.setDate(this.getDate() + parseInt(days));
         return this;
     };
@@ -62,7 +62,8 @@ const ProductCard = ({ active, pre_sale, long_plan_state, product_type, product_
                         date_till_rewarded: new Date().toDateString(),
                         time: new Date().toDateString(),
                         ddmmyy: new Date().getMilliseconds(),
-                        fullTime: new Date().addDays(plan_cycle).toDateString()
+                        fullTime: new Date().addDays(plan_cycle).toDateString(),
+                        activity_plan
                     }
                 }).then(() => {
                     console.log('Product successfully purchased');
