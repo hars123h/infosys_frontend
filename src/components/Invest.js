@@ -5,8 +5,16 @@ import Tradmark from './Tradmark'
 import hot from '../images/hot.svg'
 import ProductCard from './ProductCard'
 import img202 from '../images/productImage.jpg'
-import img302 from '../images/productImage.jpg'
+import img302 from '../images/i5.jpg'
 import { ContextApi } from '../App'
+import i1 from '../images/i1.png';
+import i2 from '../images/i2.png';
+import i3 from '../images/i3.jpg';
+import i4 from '../images/i4.jpg';
+import i5 from '../images/i5.jpg';
+import i6 from '../images/i6.jpg';
+import i7 from '../images/i7.jpg';
+import i8 from '../images/i8.jpg';
 
 const Invest = () => {
 
@@ -148,7 +156,7 @@ const Invest = () => {
                                         <div className="flex flex-wrap items-center justify-between">
 
                                             <ProductCard
-                                                product_image={img202}
+                                                product_image={i1}
                                                 product_type={0}
                                                 plan_cycle={37}
                                                 plan_amount={575}
@@ -156,7 +164,7 @@ const Invest = () => {
                                             />
 
                                             <ProductCard
-                                                product_image={img202}
+                                                product_image={i2}
                                                 product_type={0}
                                                 plan_cycle={37}
                                                 plan_amount={2000}
@@ -164,7 +172,7 @@ const Invest = () => {
                                             />
 
                                             <ProductCard
-                                                product_image={img202}
+                                                product_image={i3}
                                                 product_type={0}
                                                 plan_cycle={37}
                                                 plan_amount={5000}
@@ -172,7 +180,7 @@ const Invest = () => {
                                             />
 
                                             <ProductCard
-                                                product_image={img202}
+                                                product_image={i4}
                                                 product_type={0}
                                                 plan_cycle={37}
                                                 plan_amount={10000}
@@ -180,7 +188,7 @@ const Invest = () => {
                                             />
 
                                             <ProductCard
-                                                product_image={img202}
+                                                product_image={i5}
                                                 product_type={0}
                                                 plan_cycle={37}
                                                 plan_amount={30000}
@@ -188,7 +196,7 @@ const Invest = () => {
                                             />
 
                                             <ProductCard
-                                                product_image={img202}
+                                                product_image={i6}
                                                 product_type={0}
                                                 plan_cycle={37}
                                                 plan_amount={50000}
@@ -196,7 +204,7 @@ const Invest = () => {
                                             />
 
                                             <ProductCard
-                                                product_image={img202}
+                                                product_image={i7}
                                                 product_type={0}
                                                 plan_cycle={37}
                                                 plan_amount={100000}
@@ -204,7 +212,7 @@ const Invest = () => {
                                             />
 
                                             <ProductCard
-                                                product_image={img202}
+                                                product_image={i8}
                                                 product_type={0}
                                                 plan_cycle={37}
                                                 plan_amount={200000}
