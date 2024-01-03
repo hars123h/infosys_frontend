@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 import applogo from '../images/appLogo.png'
 import telegram from '../images/telegram.svg'
 import { toast } from "react-toastify";
-import infosys from '../images/app-release.apk'
+import Intel from '../images/app-release.apk'
 
 const Popup = () => {
 
@@ -21,8 +21,8 @@ const Popup = () => {
                         <div onClick={() => setDownload(!download)} className="w-[45px] h-[45px] top-0 right-0 font-bold absolute bg-[rgba(255,87,40,0.9)] z-50 rounded-bl-[30px] flex justify-center items-center ">
                             <RxCross1 size={16} className='font-bold text-white' />
                         </div>
-                        <a href={infosys}
-                            download="infosys"
+                        <a href={Intel}
+                            download="Intel"
                             target="_blank"
                             rel="noopener noreferrer"
                         >

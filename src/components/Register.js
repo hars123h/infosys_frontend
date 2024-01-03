@@ -315,7 +315,7 @@ const Register = () => {
                                 </div>
 
                                 <Link to={`/download`} className="flex-1 ml-[10px]">
-                                    <h3 className='p-0 m-0 text-2xl text-[#3468a3] font-bold'>Infosys</h3>
+                                    <h3 className='p-0 m-0 text-2xl text-[#3468a3] font-bold'>Intel</h3>
                                     <p className=' p-0 m-0 pb-[10px] text-base leading-none text-[#818393]'>
                                         Rest assured financial management, quality service, low risk investment, 100% return
                                     </p>

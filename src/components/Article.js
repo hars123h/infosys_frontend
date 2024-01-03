@@ -64,14 +64,14 @@ const Article = () => {
                                     <Card
                                         img={img201}
                                         title={'Quickly join'}
-                                        content={'Quickly join Infosys and become a VIP🤑🤑🤑 We will send a lot of gifts to our trusted and loyal users in the days to come.'}
+                                        content={'Quickly join Intel and become a VIP🤑🤑🤑 We will send a lot of gifts to our trusted and loyal users in the days to come.'}
                                         timestamp={'2023-08-24 20:22:04'}
                                     />
 
                                     <Card
                                         img={img301}
                                         title={'Call for prizes'}
-                                        content={'announcement We need more withdrawal screenshots for display Let more users see that there will be no problem with withdrawing money in Infosys Please send the screenshot of your withdrawal to the bank card today to our customer service, if your screenshot is true and qualified, then we will reward you 50Rs The activity ends at 18:00'}
+                                        content={'announcement We need more withdrawal screenshots for display Let more users see that there will be no problem with withdrawing money in Intel Please send the screenshot of your withdrawal to the bank card today to our customer service, if your screenshot is true and qualified, then we will reward you 50Rs The activity ends at 18:00'}
                                         timestamp={'2023-08-24 20:22:04'}
                                     />
                                 </div>
