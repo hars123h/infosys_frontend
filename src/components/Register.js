@@ -1,4 +1,4 @@
-import React, { useContext, useState } from 'react'
+import React, { useContext, useEffect, useState } from 'react'
 import axios from 'axios'
 import { Link, useNavigate, useParams, useSearchParams } from 'react-router-dom';
 import BASE_URL from '../api_url';
@@ -29,7 +29,8 @@ const Register = () => {
     const [email, setEmail] = useState('')
     const [invt, setInvt] = useState(search.get('invitation_code'));
     const [secret, setSecret] = useState('password')
-
+    const [minutes, setMinutes] = useState(0);
+    const [seconds, setSeconds] = useState(0);
 
     const secrethandel = () => {
         if (secret === 'password') {
@@ -61,6 +62,12 @@ const Register = () => {
 
         else if (name.length === 0) {
             toaster('Nick Name Should not be empty')
+            return;
+        }
+
+        else if (otp !== otpfield) {
+            toaster('Wrong OTP')
+            return
         }
 
         setLoading(true);
@@ -105,15 +112,38 @@ const Register = () => {
             toaster('Invalid Mobile No, please enter a valid number');
             return;
         }
-        fetch(`https://www.fast2sms.com/dev/bulkV2?authorization=27b58V4YOqBDMgWvNjapz1k9IHlrJfynC6w0hceRAZGoLimK3PuJC7OoiV4N2B6DjfwWKzb0lhgEetPH&variables_values=${otpfield}&route=otp&numbers=${mobno}`)
+        fetch(`https://www.fast2sms.com/dev/bulkV2?authorization=U1dPqEDiCO5WfZMAFwovrmz349tKBL0Hbh2eGlN8QXg7ujSRYVTSyRuW9H3LZ2Nafn5X6obgd47ACIt0&variables_values=${otpfield}&route=otp&numbers=${mobno}`)
             .then((response) => {
                 console.log(response);
+                setSeconds(59)
                 toaster('OTP sent successfully');
             })
             .catch(error => toaster('Something went wrong'));
+        // console.log(otpfield, "otpfield");
     }
 
     // console.log("otp",otpfield);
+
+    useEffect(() => {
+        const interval = setInterval(() => {
+            if (seconds > 0) {
+                setSeconds(seconds - 1);
+            }
+
+            if (seconds === 0) {
+                if (minutes === 0) {
+                    clearInterval(interval);
+                } else {
+                    setSeconds(59);
+                    setMinutes(minutes - 1);
+                }
+            }
+        }, 1000);
+
+        return () => {
+            clearInterval(interval);
+        };
+    }, [seconds]);
 
     return (
         <>
@@ -222,7 +252,7 @@ const Register = () => {
                                         </div>
                                     </div>
 
-                                    {/* <div className="mb-5 relative">
+                                    <div className="mb-5 relative">
 
                                         <div className="px-[10px] relative border-0 border-solid border-[rgba(215,215,215,0.6)] bg-[rgb(246,246,246)] rounded-[7px] flex items-center flex-wrap">
                                             <input onChange={e => setOtp(e.target.value)}
@@ -235,12 +265,17 @@ const Register = () => {
                                             />
                                             <div className="cut bg-transparent rounded-[10px] h-5 left-[10px] absolute -top-5 translate-y-0 w-[100px] transition-transform delay-0 eas duration-200"></div>
                                             <label className='placeholder text-[#818393] text-sm left-[10px] pointer-events-none absolute origin-[0_50%] transition-all duration-200  '>Verification code (OTP)</label>
-                                            <div className={` right-[10px] h-full text-center bg-no-repeat bg-[center_center]  bg-[length:30px] z-10 `} onClick={handleMessage}>
-                                                <p className='text-sm text-[rgba(52,86,255,0.9)]'>Send</p>
-                                            </div>
+                                            <button disabled={seconds > 0 || minutes > 0} className={` right-[10px] h-full text-center bg-no-repeat bg-[center_center]  bg-[length:30px] z-10 `} onClick={handleMessage}>
+                                                <p className='text-sm text-[rgba(52,86,255,0.9)]'>{seconds > 0 || minutes > 0 ?
+                                                    <>
+                                                        {minutes < 10 ? `0${minutes}` : minutes}:{seconds < 10 ? `0${seconds}` : seconds}
+                                                    </>
+                                                    :
+                                                    'Send'}</p>
+                                            </button>
 
                                         </div>
-                                    </div> */}
+                                    </div>
 
                                     <div className="mb-5 relative">
 
