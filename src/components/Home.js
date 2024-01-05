@@ -163,7 +163,7 @@ const Home = () => {
                                         </div>
                                     </Link>
 
-                                    <div className='max-w-[120px] w-1/4 p-[10px] text-center'>
+                                    <Link to={'https://t.me/villy_72'} className='max-w-[120px] w-1/4 p-[10px] text-center'>
                                         <div className="">
                                             <div className="mb-1 flex flex-wrap items-center justify-center relative">
                                                 <img src={whatsapp} alt="" className='w-3/5 max-w-[45px] min-w-[35px]' />
@@ -172,9 +172,9 @@ const Home = () => {
                                                 <p className='text-[#4b4d5e] text-sm font-bold'>Service Online</p>
                                             </div>
                                         </div>
-                                    </div>
+                                    </Link>
 
-                                    <Link to={'https://t.me/Oximkon'} className='max-w-[120px] w-1/4 p-[10px] text-center'>
+                                    <Link to={'https://t.me/intelofficialchannal123'} className='max-w-[120px] w-1/4 p-[10px] text-center'>
                                         <div className="">
                                             <div className="mb-1 flex flex-wrap items-center justify-center relative">
                                                 <img src={telegram} alt="" className='w-3/5 max-w-[45px] min-w-[35px]' />
